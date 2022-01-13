@@ -30,7 +30,7 @@ public class DeferExample implements MarbleDiagram{
 		CommonUtils.exampleComplete();
 	}
 
-	//ë²ˆí˜¸ê°€ ì ì¸ ë„í˜•ì„ ë°œí–‰í•˜ëŠ” Observableì„ ìƒì„±í•©ë‹ˆë‹¤.
+	//¹øÈ£°¡ ÀûÀÎ µµÇüÀ» ¹ßÇàÇÏ´Â ObservableÀ» »ı¼ºÇÕ´Ï´Ù.
 	private Observable<String> getObservable() { 
 		if (colors.hasNext()) {
 			String color = colors.next();

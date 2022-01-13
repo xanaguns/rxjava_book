@@ -23,7 +23,7 @@ public class ReactiveSum {
 				.map(Integer::parseInt);
 		Observable.combineLatest(
 				a.startWith(0),
-				b,
+				b.startWith(0),
 				(x,y) -> x+y)
 				.skip(1)
 				.subscribe(res -> System.out.println("Result : " + res));

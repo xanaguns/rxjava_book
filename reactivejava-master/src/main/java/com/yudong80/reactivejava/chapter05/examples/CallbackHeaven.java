@@ -42,7 +42,7 @@ public class CallbackHeaven {
 	
 	public static void main(String[] args) { 
 		CallbackHeaven demo = new CallbackHeaven();
-//		demo.usingConcat();
+		demo.usingConcat();
 		demo.usingZip();
 	}
 }

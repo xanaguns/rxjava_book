@@ -17,9 +17,9 @@ public class ElectricBills {
 	
 	public void electricBillV1() { 
 		String[] data = {
-			"100",  //910 + 93.3 * 100 = 10,240ì›  
-			"300",  //1600 + 93.3 * 200 + 187.9 * 100 = 39,050ì› 
- 			"800",  //7300 + 93.3 * 200 + 187.9 * 200 + 280.65 * 400 = 175,800ì›
+			"100",  //910 + 93.3 * 100 = 10,240¿ø  
+			"300",  //1600 + 93.3 * 200 + 187.9 * 100 = 39,050¿ø 
+ 			"800",  //7300 + 93.3 * 200 + 187.9 * 200 + 280.65 * 400 = 175,800¿ø
 		};
 		
 		Observable<Integer> basePrice = Observable.fromArray(data)
@@ -49,7 +49,7 @@ public class ElectricBills {
 		.subscribe(val -> { 
 			StringBuilder sb = new StringBuilder();
 			sb.append("Usage: " + data[index] + " kWh => ");
-			sb.append("Price: " + val + "ì›");
+			sb.append("Price: " + val + "¿ø");
 			Log.i(sb.toString());
 			
 			index++; //FIXME side effect!!!! 
@@ -59,9 +59,9 @@ public class ElectricBills {
 	
 	public void electricBillV2() { 
 		String[] data = {
-			"100",  //910 + 93.3 * 100 = 10,240ì›  
-			"300",  //1600 + 93.3 * 200 + 187.9 * 100 = 39,050ì›
-			"800",  //7300 + 93.3 * 200 + 187.9 * 200 + 280.65 * 400 = 175,800ì›
+			"100",  //910 + 93.3 * 100 = 10,240¿ø  
+			"300",  //1600 + 93.3 * 200 + 187.9 * 100 = 39,050¿ø
+			"800",  //7300 + 93.3 * 200 + 187.9 * 200 + 280.65 * 400 = 175,800¿ø
 		};
 		
 		Observable<Integer> basePrice = Observable.fromArray(data)
@@ -93,7 +93,7 @@ public class ElectricBills {
 		.subscribe(val -> { 
 			StringBuilder sb = new StringBuilder();
 			sb.append("Usage: " + val.getLeft() + " kWh => ");
-			sb.append("Price: " + val.getRight() + "ì›");
+			sb.append("Price: " + val.getRight() + "¿ø");
 			Log.i(sb.toString());
 		});
 		CommonUtils.exampleComplete();

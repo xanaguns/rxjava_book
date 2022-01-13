@@ -27,7 +27,7 @@ public class CombineLatestExample implements MarbleDiagram{
 		CommonUtils.exampleStart();
 		Observable<String> source = Observable.combineLatest(
 				Observable.fromArray(data1)  
-						  .zipWith( //zipWith()ë¡œ ê¹”ë”í•˜ê²Œ ì½”ë“œ ì •ë¦¬
+						  .zipWith( //zipWith()·Î ±ò²ûÇÏ°Ô ÄÚµå Á¤¸®
 						      Observable.interval(100L, TimeUnit.MILLISECONDS), 
 							  (shape, notUsed) -> Shape.getColor(shape)),	  
 				Observable.fromArray(data2)
@@ -60,6 +60,6 @@ public class CombineLatestExample implements MarbleDiagram{
 	public static void main(String[] args) {
 		CombineLatestExample demo = new CombineLatestExample();
 		demo.marbleDiagram();
-//		demo.tmp01();
+		demo.tmp01();
 	}
 }

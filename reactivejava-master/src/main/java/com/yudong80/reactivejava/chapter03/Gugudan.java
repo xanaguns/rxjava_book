@@ -74,7 +74,7 @@ public class Gugudan {
 //		demo.plainJava();
 //		demo.reactiveV1();
 //		demo.reactiveV2();
-		demo.reactiveV3();
-//		demo.usingResultSelector();
+//		demo.reactiveV3();
+		demo.usingResultSelector();
 	}
 }

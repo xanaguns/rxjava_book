@@ -21,7 +21,7 @@ public class OpenWeatherMapV1 {
 				.map(OkHttpHelper::getWithLog)
 				.subscribeOn(Schedulers.io());
 		
-		//ì–´ë–»ê²Œ í˜¸ì¶œì„ í•œë²ˆë§Œ í•˜ê²Œ í•  ìˆ˜ ìˆì„ê¹Œ? 
+		//¾î¶»°Ô È£ÃâÀ» ÇÑ¹ø¸¸ ÇÏ°Ô ÇÒ ¼ö ÀÖÀ»±î? 
 		Observable<String> temperature = source.map(this::parseTemperature);
 		Observable<String> city = source.map(this::parseCityName);
 		Observable<String> country = source.map(this::parseCountry);
@@ -33,7 +33,7 @@ public class OpenWeatherMapV1 {
 				.observeOn(Schedulers.newThread())
 				.subscribe(Log::it);
 		
-		CommonUtils.sleep(3000);
+		CommonUtils.sleep(5000);
 	}
 	
 	private String parseTemperature(String json) { 
