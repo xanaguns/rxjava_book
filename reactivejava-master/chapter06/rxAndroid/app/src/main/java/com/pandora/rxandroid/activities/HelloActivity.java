@@ -1,8 +1,8 @@
 package com.pandora.rxandroid.activities;
 
 
-import android.app.Activity;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.pandora.rxandroid.R;
@@ -16,7 +16,7 @@ import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.observers.DisposableObserver;
 
-public class HelloActivity extends Activity {
+public class HelloActivity extends AppCompatActivity {
     public static final String TAG = HelloActivity.class.getSimpleName();
 
     @BindView(R.id.textView) TextView textView;

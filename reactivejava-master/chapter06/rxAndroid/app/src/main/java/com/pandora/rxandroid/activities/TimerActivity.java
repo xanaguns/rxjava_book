@@ -3,13 +3,12 @@ package com.pandora.rxandroid.activities;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.pandora.rxandroid.R;
 
-import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
