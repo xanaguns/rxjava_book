@@ -24,14 +24,14 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
             </intent-filter>
         </activity>
         <activity android:name=".activities.TimerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
             </intent-filter>
         </activity>
 
@@ -39,35 +39,35 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
             </intent-filter>
         </activity>
         <activity android:name=".activities.HelloActivityV2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
             </intent-filter>
         </activity>
         <activity android:name=".activities.HelloActivityV3"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
             </intent-filter>
         </activity>
         <activity android:name=".activities.HelloRxAppActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
             </intent-filter>
         </activity>
         <activity android:name=".activities.LoopActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
             </intent-filter>
         </activity>
     </application>
